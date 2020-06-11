@@ -1,20 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "how_tos",
+  "collectionName": "subcategories",
   "info": {
-    "name": "how-to"
+    "name": "subcategories"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "image": {
+    "media": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,8 +20,18 @@
       "plugin": "upload",
       "required": false
     },
-    "categories": {
-      "collection": "categories"
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "actionText": {
+      "type": "string"
+    },
+    "category": {
+      "model": "categories",
+      "via": "subcategories"
     }
   }
 }
