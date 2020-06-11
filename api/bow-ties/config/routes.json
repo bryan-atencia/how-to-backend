@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bow-ties",
+      "handler": "bow-ties.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bow-ties",
+      "handler": "bow-ties.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bow-ties",
+      "handler": "bow-ties.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

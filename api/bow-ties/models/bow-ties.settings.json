@@ -1,0 +1,12 @@
+{
+  "kind": "singleType",
+  "collectionName": "bow_ties",
+  "info": {
+    "name": "bow-ties"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {}
+}

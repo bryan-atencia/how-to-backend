@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "how_tos",
+  "info": {
+    "name": "how-to"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
