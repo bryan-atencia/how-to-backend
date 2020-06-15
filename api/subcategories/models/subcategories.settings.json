@@ -32,6 +32,18 @@
     "category": {
       "model": "categories",
       "via": "subcategories"
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "pageDescription": {
+      "type": "text"
+    },
+    "pageActionLink": {
+      "type": "string"
+    },
+    "steps": {
+      "collection": "steps"
     }
   }
 }
