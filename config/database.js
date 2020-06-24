@@ -5,6 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client:"postgres",
+
         // host: "localhost",
         // port:  5432,
         // database: 'bryanatencia',

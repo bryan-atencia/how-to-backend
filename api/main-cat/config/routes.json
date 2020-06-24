@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/how-tos",
-      "handler": "how-to.find",
-      "config": {
-        "policies": ["checkSku"]
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/how-tos/count",
-      "handler": "how-to.count",
+      "path": "/main-cats",
+      "handler": "main-cat.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/how-tos/:id",
-      "handler": "how-to.findOne",
+      "path": "/main-cats/count",
+      "handler": "main-cat.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/main-cats/:id",
+      "handler": "main-cat.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/how-tos",
-      "handler": "how-to.create",
+      "path": "/main-cats",
+      "handler": "main-cat.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/how-tos/:id",
-      "handler": "how-to.update",
+      "path": "/main-cats/:id",
+      "handler": "main-cat.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/how-tos/:id",
-      "handler": "how-to.delete",
+      "path": "/main-cats/:id",
+      "handler": "main-cat.delete",
       "config": {
         "policies": []
       }

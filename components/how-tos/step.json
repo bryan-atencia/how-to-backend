@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_how_tos_steps",
+  "info": {
+    "name": "step",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

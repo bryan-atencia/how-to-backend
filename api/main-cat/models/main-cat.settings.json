@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "main_cats",
   "info": {
-    "name": "categories"
+    "name": "mainCat"
   },
   "options": {
     "increments": true,
@@ -10,19 +10,16 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "subtitle": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "actionText": {
-      "type": "string",
-      "required": false
+      "type": "string"
     },
     "heroImage": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -36,14 +33,15 @@
       "type": "string"
     },
     "heroDescription": {
-      "type": "richtext"
+      "type": "text"
     },
     "heroActionLink": {
       "type": "string"
     },
     "subcategories": {
-      "collection": "subcategories",
-      "via": "category"
+      "type": "component",
+      "repeatable": true,
+      "component": "how-tos.subcategory"
     }
   }
 }

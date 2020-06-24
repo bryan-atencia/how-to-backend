@@ -1,16 +1,13 @@
 {
-  "kind": "collectionType",
-  "collectionName": "subcategories",
+  "collectionName": "components_how_tos_subcategories",
   "info": {
-    "name": "subcategories"
+    "name": "subcategory",
+    "icon": "allergies"
   },
-  "options": {
-    "increments": true,
-    "timestamps": true
-  },
+  "options": {},
   "attributes": {
     "media": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -24,26 +21,24 @@
       "type": "string"
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     },
     "actionText": {
       "type": "string"
-    },
-    "category": {
-      "via": "subcategories",
-      "model": "categories"
     },
     "pageTitle": {
       "type": "string"
     },
     "pageDescription": {
-      "type": "text"
+      "type": "string"
     },
     "pageActionLink": {
       "type": "string"
     },
     "steps": {
-      "collection": "steps"
+      "type": "component",
+      "repeatable": true,
+      "component": "how-tos.step"
     }
   }
 }
